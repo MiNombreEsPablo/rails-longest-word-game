@@ -1,4 +1,4 @@
-<p>Build the longest word possible with the following letters</p>
+<h1>New Game</h1>
 <div class="container">
   <div class="row" id="letters">
     <% @letters.each do |letter| %>
@@ -7,10 +7,11 @@
   </div>
 </div>
 
+    <label for="word" class="mr-2">What is the longest word you can find?</label>
 <form class="form-inline" action="/score">
   <%= hidden_field_tag 'letters', @letters %>
-  <label class="sr-only" for="word">Word</label>
-  <input type="text" class="form-control mb-2 mr-sm-2" name="word" placeholder="Your word">
-
-  <button type="submit" class="btn btn-primary mb-2" href="">Submit</button>
+  <div class="form-group mb-2">
+    <input type="text" class="form-control mr-2" name="word" placeholder="Your word">
+    <button type="submit" class="btn btn-primary input-group-append">Submit</button>
+  </div>
 </form>

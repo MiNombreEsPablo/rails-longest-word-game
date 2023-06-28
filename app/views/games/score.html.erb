@@ -1,6 +1,4 @@
-<%= @word %>
-<br>
-<%= @letters.split %>
-<br>
+<h1>Result</h1>
 <p><%= raw @result[:message] %></p>
-<%= @result[:score] %>
+<p>Score: <%= @result[:score] %></p>
+<%= link_to "Play again", root_path %>

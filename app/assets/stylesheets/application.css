@@ -15,12 +15,16 @@
  */
 
 #letters .col-sm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: white;
   height: 56px;
   width: 56px;
   text-align: center;
   background-color: #3498dc;
-  font-size: x-large;
+  font-size: xx-large;
   font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
   box-shadow: 4px 2px 2px rgba(0,0,0,.2);
 }
